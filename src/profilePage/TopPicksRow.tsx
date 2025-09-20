@@ -23,7 +23,8 @@ const topPicksConfig = {
   recruiter: [
     {
       title: "Work Permit",
-      imgSrc: "https://picsum.photos/seed/workpermit/250/200",
+      imgSrc:
+        "https://fastly.picsum.photos/id/5/5000/3334.jpg?hmac=R_jZuyT1jbcfBlpKFxAb0Q3lof9oJ0kREaxsYV3MgCc",
       icon: <FaPassport />,
       route: "/work-permit",
     },
