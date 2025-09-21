@@ -4,6 +4,8 @@ import Layout from "./Layout";
 import NetflixTitle from "./NetflixTitle";
 import { Routes, Route } from "react-router-dom";
 import ProfilePage from "./profilePage/profilePage";
+import WorkPermit from "./pages/WorkPermit";
+import Skills from "./pages/Skills";
 function App() {
   return (
     <Routes>
@@ -14,6 +16,22 @@ function App() {
         element={
           <Layout>
             <ProfilePage></ProfilePage>
+          </Layout>
+        }
+      />
+      <Route
+        path="/work-permit"
+        element={
+          <Layout>
+            <WorkPermit />
+          </Layout>
+        }
+      />
+      <Route
+        path="/skills"
+        element={
+          <Layout>
+            <Skills />
           </Layout>
         }
       />
