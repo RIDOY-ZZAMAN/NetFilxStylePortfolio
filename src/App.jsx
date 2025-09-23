@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import ProfilePage from "./profilePage/profilePage";
 import WorkPermit from "./pages/WorkPermit";
 import Skills from "./pages/Skills";
+import WorkExperience from "./pages/WorkExperience";
 function App() {
   return (
     <Routes>
@@ -32,6 +33,14 @@ function App() {
         element={
           <Layout>
             <Skills />
+          </Layout>
+        }
+      />
+      <Route
+        path="/work-experience"
+        element={
+          <Layout>
+            <WorkExperience />
           </Layout>
         }
       />

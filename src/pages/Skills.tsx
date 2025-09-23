@@ -6,14 +6,9 @@ import { Skill } from "../types";
 import { getSkills } from "../queries/getSkills";
 
 const iconMap: { [key: string]: JSX.Element } = {
-  SiPython: <SiPython />,
   FaNodeJs: <FaNodeJs />,
   FaCodeBranch: <FaCodeBranch />,
-  SiPhp: <SiPhp />,
   FaReact: <FaReact />,
-  SiTypescript: <SiTypescript />,
-  SiMysql: <SiMysql />,
-  SiKubernetes: <SiKubernetes />,
   SiHtml5: <SiHtml5 />,
   SiCss3: <SiCss3 />,
 };
