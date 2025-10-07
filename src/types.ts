@@ -31,6 +31,7 @@ export interface Project {
 
 export interface Certification {
   title: string;
+  verifyLink: { url: string };
   issuer: string;
   issuedDate: string;
   link: string;

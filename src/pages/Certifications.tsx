@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./Certifications.css";
-import { FaExternalLinkAlt, FaUniversity } from "react-icons/fa";
+import {
+  FaExternalLinkAlt,
+  FaUniversity,
+  FaChalkboardTeacher,
+} from "react-icons/fa";
 import { SiUdemy, SiCoursera, SiIeee } from "react-icons/si";
 import { Certification } from "../types";
 import { getCertifications } from "../queries/getCertifications";
@@ -9,6 +13,7 @@ const iconData: { [key: string]: JSX.Element } = {
   coursera: <SiCoursera />,
   ieee: <SiIeee />,
   university: <FaUniversity />,
+  qa: <FaChalkboardTeacher color="#0056b3" />,
 };
 
 const Certifications: React.FC = () => {
@@ -38,10 +43,11 @@ const Certifications: React.FC = () => {
             className="certification-card"
             style={{ "--delay": `${index * 0.2}s` } as React.CSSProperties}
           >
+            <img src={cert.image} alt="" />
             <div className="certification-content">
-              <div className="certification-icon">
+              {/* <div className="certification-icon">
                 {iconData[cert.iconName] || <FaUniversity />}
-              </div>
+              </div> */}
               <h3>{cert.title}</h3>
               <p>{cert.organization}</p>
               {cert.date && (
