@@ -9,6 +9,7 @@ import Skills from "./pages/Skills";
 import WorkExperience from "./pages/WorkExperience";
 import Certifications from "./pages/Certifications";
 import Recommendations from "./pages/Recommendations";
+import Projects from "./pages/Projects";
 function App() {
   return (
     <Routes>
@@ -59,6 +60,14 @@ function App() {
         element={
           <Layout>
             <Recommendations />
+          </Layout>
+        }
+      />
+      <Route
+        path="/projects"
+        element={
+          <Layout>
+            <Projects />
           </Layout>
         }
       />
