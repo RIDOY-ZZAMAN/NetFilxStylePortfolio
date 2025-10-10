@@ -13,6 +13,8 @@ const Recommendations: React.FC = () => {
     fetchData();
   }, []);
 
+  if (recommdentationsData.length == 0) return <div>Loading ...</div>;
+
   return (
     <div className="timeline-container">
       <div className="recommendation-card">
