@@ -10,6 +10,7 @@ import WorkExperience from "./pages/WorkExperience";
 import Certifications from "./pages/Certifications";
 import Recommendations from "./pages/Recommendations";
 import Projects from "./pages/Projects";
+import ContactMe from "./pages/ContactMe";
 function App() {
   return (
     <Routes>
@@ -68,6 +69,14 @@ function App() {
         element={
           <Layout>
             <Projects />
+          </Layout>
+        }
+      />
+      <Route
+        path="/contact-me"
+        element={
+          <Layout>
+            <ContactMe />
           </Layout>
         }
       />
