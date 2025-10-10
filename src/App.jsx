@@ -12,6 +12,7 @@ import Recommendations from "./pages/Recommendations";
 import Projects from "./pages/Projects";
 import ContactMe from "./pages/ContactMe";
 import Music from "./pages/Music";
+import Reading from "./pages/Reading";
 function App() {
   return (
     <Routes>
@@ -87,6 +88,14 @@ function App() {
         element={
           <Layout>
             <Music />
+          </Layout>
+        }
+      />
+      <Route
+        path="/reading"
+        element={
+          <Layout>
+            <Reading />
           </Layout>
         }
       />

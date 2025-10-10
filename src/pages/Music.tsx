@@ -8,13 +8,13 @@ const Music: React.FC = () => {
   const [music, setMusic] = useState([]);
 
   useEffect(() => {
-    async function fetchProjects() {
+    async function fetchMusics() {
       const data = await getMusic();
       console.log("Consoling from the Music tsx", data);
       setMusic(data);
     }
 
-    fetchProjects();
+    fetchMusics();
   }, []);
 
   // Function to convert YouTube URLs to embed format
@@ -41,7 +41,7 @@ const Music: React.FC = () => {
   return (
     <div className="music-page">
       <div className="genre-section">
-        <h3>Explore by Genre</h3>
+        <h3>Genre</h3>
         <div className="genres">
           {favoriteGenres.map((genre, index) => (
             <div

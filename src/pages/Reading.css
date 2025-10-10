@@ -1,0 +1,116 @@
+/* Reading.css */
+.reading-container {
+  padding: 5rem 2rem;
+  color: #333;
+  text-align: center;
+  background: #1a1a1a; /* Added background so white text is visible */
+  min-height: 100vh;
+}
+
+.reading-title {
+  font-size: 2.5rem;
+  color: #ff6f61;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  animation: slideDown 0.8s ease-in-out;
+}
+
+.reading-intro {
+  font-size: 1.1rem;
+  color: #ffffff; /* Changed from white to explicit hex for better compatibility */
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.book-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 1; /* REMOVED opacity: 0 */
+  cursor: pointer;
+  animation: fadeInUp 0.5s ease forwards;
+  /* REMOVED conflicting animation: popUp */
+}
+
+.book-card:hover {
+  transform: translateY(-10px) scale(1.02); /* Combined transforms */
+  box-shadow: 0 8px 20px rgba(255, 111, 97, 0.3); /* Fixed shadow */
+}
+
+.book-cover {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block; /* Ensure image is displayed */
+}
+
+.book-info {
+  padding: 1.5rem;
+}
+
+.book-title {
+  font-size: 1.3rem;
+  color: #333;
+  margin: 0.5rem 0;
+  font-weight: 600;
+}
+
+.book-author {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.book-description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+.book-card:hover .book-description {
+  color: #ff6f61;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Loading state */
+.no-books {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
