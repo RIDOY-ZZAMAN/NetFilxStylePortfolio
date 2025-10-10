@@ -11,6 +11,7 @@ import Certifications from "./pages/Certifications";
 import Recommendations from "./pages/Recommendations";
 import Projects from "./pages/Projects";
 import ContactMe from "./pages/ContactMe";
+import Music from "./pages/Music";
 function App() {
   return (
     <Routes>
@@ -77,6 +78,15 @@ function App() {
         element={
           <Layout>
             <ContactMe />
+          </Layout>
+        }
+      />
+
+      <Route
+        path="/music"
+        element={
+          <Layout>
+            <Music />
           </Layout>
         }
       />
