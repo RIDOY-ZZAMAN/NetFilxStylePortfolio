@@ -23,8 +23,7 @@ const Reading: React.FC = () => {
     <div className="reading-container">
       <h2 className="reading-title">📚 Books That Shaped My Journey</h2>
       <p className="reading-intro">
-        These books have influenced my perspectives, motivation, and
-        self-growth.
+        These books have influenced my self-growth.
       </p>
       <div className="books-grid">
         {books.map((book, index) => (

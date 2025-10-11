@@ -13,6 +13,7 @@ import Projects from "./pages/Projects";
 import ContactMe from "./pages/ContactMe";
 import Music from "./pages/Music";
 import Reading from "./pages/Reading";
+import Blogs from "./pages/Blogs";
 function App() {
   return (
     <Routes>
@@ -96,6 +97,14 @@ function App() {
         element={
           <Layout>
             <Reading />
+          </Layout>
+        }
+      />
+      <Route
+        path="/blogs"
+        element={
+          <Layout>
+            <Blogs />
           </Layout>
         }
       />
