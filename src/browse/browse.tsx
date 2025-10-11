@@ -15,7 +15,7 @@ const Browse: React.FC = () => {
       name: "recruiter",
       image: blueImage,
       backgroundGif:
-        "https://media.licdn.com/dms/image/v2/C4E12AQEnW1GiPhnyuw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1590444667333?e=2147483647&v=beta&t=hwS4VOiE3WL34i3YBbOwu-17EUS4suzeItFfV0R4rMI", // Dark storm clouds
+        "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTZ5eWwwbjRpdWM1amxyd3VueHhteTVzajVjeGZtZGJ1dDc4MXMyNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/16u7Ifl2T4zYfQ932F/giphy.gif", // Dark storm clouds
     },
     {
       name: "developer",
