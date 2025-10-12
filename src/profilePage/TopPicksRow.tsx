@@ -51,19 +51,22 @@ const topPicksConfig = {
     },
     {
       title: "Recommendations",
-      imgSrc: "https://picsum.photos/seed/recommendations/250/200",
+      imgSrc:
+        "https://martech.org/wp-content/uploads/2017/10/ss-recommendation.jpg",
       icon: <FaHandsHelping />,
       route: "/recommendations",
     },
     {
       title: "Projects",
-      imgSrc: "https://picsum.photos/seed/projects/250/200",
+      imgSrc:
+        "https://piedmontcc.edu/wp-content/uploads/2022/07/project-1024x439.png",
       icon: <FaProjectDiagram />,
       route: "/projects",
     },
     {
       title: "Contact Me",
-      imgSrc: "https://picsum.photos/seed/contact/250/200",
+      imgSrc:
+        "https://t4.ftcdn.net/jpg/03/37/96/33/360_F_337963325_EJuPjWslX3vAFxJ59L3y1cm6IsSfo07s.jpg",
       icon: <FaEnvelope />,
       route: "/contact-me",
     },
@@ -71,7 +74,8 @@ const topPicksConfig = {
   developer: [
     {
       title: "Skills",
-      imgSrc: "https://picsum.photos/seed/coding/250/200",
+      imgSrc:
+        "https://dxhub.calpoly.edu/wp-content/uploads/2021/10/LaborMarket-overview.png",
       route: "/skills",
       icon: <FaCode />,
     },
@@ -141,7 +145,8 @@ const topPicksConfig = {
   adventure: [
     {
       title: "Music",
-      imgSrc: "https://picsum.photos/seed/music/250/200",
+      imgSrc:
+        "https://marketplace.canva.com/EAFvLSrAX9U/1/0/1600w/canva-music-desktop-wallpaper-qgZBY-Ll2Vc.jpg",
       route: "/music",
       icon: <FaMusic />,
     },

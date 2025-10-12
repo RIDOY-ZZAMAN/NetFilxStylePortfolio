@@ -12,7 +12,8 @@ const continueWatchingConfig = {
   recruiter: [
     {
       title: "Music",
-      imgSrc: "https://picsum.photos/id/1025/300/200",
+      imgSrc:
+        "https://marketplace.canva.com/EAFvLSrAX9U/1/0/1600w/canva-music-desktop-wallpaper-qgZBY-Ll2Vc.jpg",
       link: "/music",
     },
     {
@@ -22,7 +23,8 @@ const continueWatchingConfig = {
     },
     {
       title: "Blogs",
-      imgSrc: "https://picsum.photos/id/1027/300/200",
+      imgSrc:
+        "https://static.vecteezy.com/system/resources/previews/066/679/577/non_2x/blogging-illustration-with-blog-page-on-computer-screen-and-creative-elements-vector.jpg",
       link: "/blogs",
     },
     {
@@ -34,7 +36,8 @@ const continueWatchingConfig = {
   developer: [
     {
       title: "Music",
-      imgSrc: "https://picsum.photos/id/1025/300/200",
+      imgSrc:
+        "https://marketplace.canva.com/EAFvLSrAX9U/1/0/1600w/canva-music-desktop-wallpaper-qgZBY-Ll2Vc.jpg",
       link: "/music",
     },
     {
@@ -44,7 +47,8 @@ const continueWatchingConfig = {
     },
     {
       title: "Blogs",
-      imgSrc: "https://picsum.photos/id/1027/300/200",
+      imgSrc:
+        "https://static.vecteezy.com/system/resources/previews/066/679/577/non_2x/blogging-illustration-with-blog-page-on-computer-screen-and-creative-elements-vector.jpg",
       link: "/blogs",
     },
     {
@@ -66,7 +70,8 @@ const continueWatchingConfig = {
     },
     {
       title: "Blogs",
-      imgSrc: "https://picsum.photos/id/1027/300/200",
+      imgSrc:
+        "https://static.vecteezy.com/system/resources/previews/066/679/577/non_2x/blogging-illustration-with-blog-page-on-computer-screen-and-creative-elements-vector.jpg",
       link: "/blogs",
     },
     {
@@ -78,7 +83,8 @@ const continueWatchingConfig = {
   adventure: [
     {
       title: "Music",
-      imgSrc: "https://picsum.photos/id/1025/300/200",
+      imgSrc:
+        "https://marketplace.canva.com/EAFvLSrAX9U/1/0/1600w/canva-music-desktop-wallpaper-qgZBY-Ll2Vc.jpg",
       link: "/music",
     },
     {
