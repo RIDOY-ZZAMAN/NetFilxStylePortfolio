@@ -10,6 +10,7 @@ import { FaStar as StarIcon } from "react-icons/fa";
 import "./WorkExperience.css";
 import { TimelineItem } from "../types";
 import { getTimeline } from "../queries/getTimeline";
+import GoBackButton from "../components/GoBackButton";
 
 const WorkExperience: React.FC = () => {
   const [timeLineData, setTimeLineData] = useState<TimelineItem[] | null>(null);
@@ -30,6 +31,7 @@ const WorkExperience: React.FC = () => {
   return (
     <>
       <div className="timeline-container">
+        <GoBackButton />
         <h2 className="timeline-title">
           📅 Work Experience & Education Timeline
         </h2>

@@ -32,6 +32,7 @@ import {
 import { Project } from "../types";
 import { getProjects } from "../queries/getProjects";
 import { GrDeploy, GrKubernetes } from "react-icons/gr";
+import GoBackButton from "../components/GoBackButton";
 
 const techIcons: { [key: string]: JSX.Element } = {
   ReactJS: <FaReact />,
@@ -104,6 +105,7 @@ const Projects: React.FC = () => {
 
   return (
     <div className="projects-container">
+      <GoBackButton></GoBackButton> <br />
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div

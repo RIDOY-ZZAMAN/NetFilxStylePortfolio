@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Reading.css";
 import { getReading } from "../queries/getReading";
+import GoBackButton from "../components/GoBackButton";
 
 const Reading: React.FC = () => {
   const [books, setBooks] = useState([]);
@@ -21,6 +22,7 @@ const Reading: React.FC = () => {
 
   return (
     <div className="reading-container">
+      <GoBackButton></GoBackButton>
       <h2 className="reading-title">📚 Books That Shaped My Journey</h2>
       <p className="reading-intro">
         These books have influenced my self-growth.

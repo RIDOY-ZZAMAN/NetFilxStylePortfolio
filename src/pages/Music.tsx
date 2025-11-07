@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Music.css";
 import { getMusic } from "../queries/getMusic";
+import GoBackButton from "../components/GoBackButton";
 
 const favoriteGenres = ["Islamic", "Classic"];
 
@@ -40,6 +41,7 @@ const Music: React.FC = () => {
 
   return (
     <div className="music-page">
+      <GoBackButton></GoBackButton>
       <div className="genre-section">
         <h3>Genre</h3>
         <div className="genres">

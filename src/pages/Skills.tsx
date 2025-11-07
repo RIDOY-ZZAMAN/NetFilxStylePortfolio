@@ -4,6 +4,7 @@ import { FaReact, FaNodeJs, FaCodeBranch } from "react-icons/fa";
 import { SiHtml5, SiCss3 } from "react-icons/si";
 import { Skill } from "../types";
 import { getSkills } from "../queries/getSkills";
+import GoBackButton from "../components/GoBackButton";
 
 const iconMap: { [key: string]: JSX.Element } = {
   FaNodeJs: <FaNodeJs />,
@@ -34,6 +35,7 @@ const Skills: React.FC = () => {
 
   return (
     <div className="skills-container">
+      <GoBackButton></GoBackButton>
       {Object.keys(skillsByCategory).map((category, index) => (
         <div key={index} className="skill-category">
           <h3 className="category-title">{category}</h3>

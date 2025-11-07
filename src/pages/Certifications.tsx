@@ -8,6 +8,7 @@ import {
 import { SiUdemy, SiCoursera, SiIeee } from "react-icons/si";
 import { Certification } from "../types";
 import { getCertifications } from "../queries/getCertifications";
+import GoBackButton from "../components/GoBackButton";
 
 const iconData: { [key: string]: JSX.Element } = {
   udemy: <SiUdemy />,
@@ -109,6 +110,7 @@ const Certifications: React.FC = () => {
 
   return (
     <div className="certifications-container">
+      <GoBackButton></GoBackButton>
       <div className="certifications-grid">
         {certifications.map((cert, index) => (
           <a

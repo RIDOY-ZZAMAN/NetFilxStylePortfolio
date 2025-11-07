@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./WorkPermit.css";
+import GoBackButton from "../components/GoBackButton";
 const WorkPermit: React.FC = () => {
   return (
     <div className="work-permit-container">
+      <GoBackButton></GoBackButton>
       <div className="work-permit-card">
         <h2 className="work-permit-headline">🎓 Work Permit</h2>
         <p className="work-permit-summary">

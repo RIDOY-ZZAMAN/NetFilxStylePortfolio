@@ -1,0 +1,62 @@
+.go-back-btn {
+  position: fixed;
+  top: clamp(16px, 4vw, 90px);
+  left: clamp(16px, 4vw, 90px);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(
+    135deg,
+    #1a1a1a,
+    #111111
+  ); /* dark gray/black gradient */
+  color: #ffffff;
+  border: 1px solid #2a2a2a;
+  border-radius: 9999px;
+  padding: 10px 18px;
+  font-size: 15px;
+  font-weight: bolder;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+  transition: all 0.25s ease;
+  z-index: 1000;
+}
+
+.go-back-btn:hover {
+  background: linear-gradient(135deg, #1e40af, #1d4ed8);
+  transform: translateY(-2px);
+}
+
+/* 💻 Desktops / Laptops */
+@media (min-width: 1025px) {
+  .go-back-btn {
+    top: 80px;
+    left: 80px;
+    padding: 12px 22px;
+    font-size: 16px;
+  }
+}
+
+/* 📱 Tablets */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .go-back-btn {
+    top: 60px;
+    left: 40px;
+    padding: 10px 18px;
+    font-size: 15px;
+  }
+}
+
+/* 📞 Mobile Phones */
+@media (max-width: 599px) {
+  .go-back-btn {
+    position: absolute; /* prevents overlapping fixed header */
+    top: 80px; /* drops below your title area */
+    left: 50%;
+    transform: translateX(-50%); /* centers button horizontally */
+    padding: 8px 16px;
+    font-size: 14px;
+    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.4);
+    gap: 6px;
+  }
+}

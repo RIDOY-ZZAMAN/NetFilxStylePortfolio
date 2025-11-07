@@ -1,0 +1,33 @@
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #181717; /* GitHub brand black */
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.github-button:hover {
+  background-color: #2d2d2d; /* Slightly lighter hover */
+  transform: translateY(-1px);
+}
+
+.icon-containerGit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spacerGit {
+  width: 0.75rem;
+}
+
+.labelGit {
+  font-size: 1rem;
+  color: #ffffff;
+}

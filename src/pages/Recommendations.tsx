@@ -2,6 +2,7 @@ import React from "react";
 import "./Recommendations.css";
 import { useEffect, useState } from "react";
 import { getRecommendations } from "../queries/getRecommendations";
+import GoBackButton from "../components/GoBackButton";
 const Recommendations: React.FC = () => {
   const [recommdentationsData, setRecommandationData] = useState([]);
 
@@ -17,6 +18,7 @@ const Recommendations: React.FC = () => {
 
   return (
     <div className="timeline-container">
+      <GoBackButton></GoBackButton>
       <div className="recommendation-card">
         {recommdentationsData.map((recommendation, index) => (
           <div className="recommendation-header" key={index}>

@@ -4,6 +4,7 @@ import profilePic from "../images/Photo.jpg";
 import { FaEnvelope, FaPhoneAlt, FaCoffee, FaLinkedin } from "react-icons/fa";
 import { ContactMe as IContactMe } from "../types";
 import { getContactMe } from "../queries/getContactMe";
+import GoBackButton from "../components/GoBackButton";
 
 const ContactMe: React.FC = () => {
   const [userData, setUserData] = useState<IContactMe>();
@@ -25,6 +26,7 @@ const ContactMe: React.FC = () => {
     <>
       {userData.map((user, index) => (
         <div className="contact-container" key={index}>
+          <GoBackButton></GoBackButton>
           <div className="linkedin-badge-custom">
             <img
               src={profilePic}
