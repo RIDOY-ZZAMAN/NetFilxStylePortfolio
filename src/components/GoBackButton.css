@@ -51,7 +51,7 @@
 @media (max-width: 599px) {
   .go-back-btn {
     position: absolute; /* prevents overlapping fixed header */
-    top: 80px; /* drops below your title area */
+    top: 180px; /* drops below your title area */
     left: 50%;
     transform: translateX(-50%); /* centers button horizontally */
     padding: 8px 16px;

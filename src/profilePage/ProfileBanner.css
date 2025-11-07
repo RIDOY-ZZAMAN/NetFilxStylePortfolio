@@ -12,6 +12,39 @@
   overflow: hidden;
   padding: 40px 20px 20px 20px;
 }
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #141414;
+  color: #e50914;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Circular loader */
+.loader {
+  border: 6px solid #2c2c2c;
+  border-top: 6px solid #e50914;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.loader-text {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  letter-spacing: 1px;
+  opacity: 0.8;
+  animation: pulse 1.5s infinite;
+}
 
 .profile-banner::before {
   content: "";
@@ -106,5 +139,43 @@
     width: auto;
     padding: 10px 15px;
     font-size: 0.9rem;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* --- Responsive scaling --- */
+
+/* For tablets and small laptops */
+@media (max-width: 1024px) {
+  .loader {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 600px) {
+  .loader {
+    width: 60px;
+    height: 60px;
+  }
+
+  .loader-text {
+    font-size: clamp(0.9rem, 4vw, 1.2rem);
   }
 }

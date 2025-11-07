@@ -18,7 +18,13 @@ const ProfileBanner: React.FC = () => {
     fetchData();
   }, []);
 
-  if (!bannerData) return <div>Loading...</div>;
+  if (!bannerData)
+    return (
+      <div className="loader-container">
+        <div className="loader"></div>
+        <p className="loader-text">Loading ...</p>
+      </div>
+    );
 
   const handlePlayClick = () => {
     window.open(
