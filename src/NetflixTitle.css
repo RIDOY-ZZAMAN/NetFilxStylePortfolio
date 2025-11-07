@@ -14,6 +14,7 @@
   opacity: 0;
   transform: scale(0.8);
   animation: fadeIn 0.5s forwards ease-in;
+  cursor: pointer;
 }
 
 @keyframes fadeIn {
