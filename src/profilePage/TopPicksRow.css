@@ -95,3 +95,10 @@
     transform: translateX(0);
   }
 }
+
+@media (max-width: 767px) {
+  .card-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}

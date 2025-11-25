@@ -139,3 +139,15 @@
     transform: scale(1.05);
   }
 }
+
+@media (max-width: 599px) {
+  .blogs-title {
+    font-size: 2.5rem;
+    color: #4a90e2;
+    font-weight: bold;
+    margin-top: 4rem;
+    animation: slideDown 1s ease-in-out forwards;
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}

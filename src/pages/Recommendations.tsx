@@ -24,7 +24,7 @@ const Recommendations: React.FC = () => {
           <div className="recommendation-header" key={index}>
             <img
               src={recommendation.image}
-              alt="Chris Smith"
+              alt="Nagendra Rijal Upadhyaya"
               className="profile-pic"
             />
             <div>

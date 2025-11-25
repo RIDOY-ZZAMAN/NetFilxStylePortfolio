@@ -13,6 +13,8 @@ import {
   FaBook,
 } from "react-icons/fa";
 
+import useMediaQuery from "../mediaQuery/useMediaQuery";
+
 type ProfileType = "recruiter" | "developer" | "stalker" | "adventure";
 
 interface TopPicksRowProps {
@@ -181,25 +183,58 @@ const TopPicksRow: React.FC<TopPicksRowProps> = ({ profile }) => {
   const navigate = useNavigate();
   const topPicks = topPicksConfig[profile];
 
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
   return (
-    <div className="top-picks-row">
-      <h2 className="row-title">Today's Top Picks for {profile}</h2>
-      <div className="card-row">
-        {topPicks.map((pick, index) => (
-          <div
-            key={index}
-            className="pick-card"
-            onClick={() => navigate(pick.route)}
-            style={{ animationDelay: `${index * 0.2}s` }} // Adding delay based on index
-          >
-            <img src={pick.imgSrc} alt={pick.title} className="pick-image" />
-            <div className="overlay">
-              <div className="pick-label">{pick.title}</div>
-            </div>
+    <>
+      {isMobile ? (
+        <div className="top-picks-row">
+          <h2 className="row-title">Today's Top Picks for {profile}</h2>
+          <div className="card-row">
+            {topPicks.map((pick, index) => (
+              <div
+                key={index}
+                className="pick-card"
+                onClick={() => navigate(pick.route)}
+                style={{ animationDelay: `${index * 0.2}s` }} // Adding delay based on index
+              >
+                <img
+                  src={pick.imgSrc}
+                  alt={pick.title}
+                  className="pick-image"
+                />
+                <div className="overlay">
+                  <div className="pick-label">{pick.title}</div>
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    </div>
+        </div>
+      ) : (
+        <div className="top-picks-row">
+          <h2 className="row-title">Today's Top Picks for {profile}</h2>
+          <div className="card-row">
+            {topPicks.map((pick, index) => (
+              <div
+                key={index}
+                className="pick-card"
+                onClick={() => navigate(pick.route)}
+                style={{ animationDelay: `${index * 0.2}s` }} // Adding delay based on index
+              >
+                <img
+                  src={pick.imgSrc}
+                  alt={pick.title}
+                  className="pick-image"
+                />
+                <div className="overlay">
+                  <div className="pick-label">{pick.title}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 
