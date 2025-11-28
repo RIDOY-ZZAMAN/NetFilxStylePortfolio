@@ -28,7 +28,7 @@ const ProfileBanner: React.FC = () => {
 
   const handlePlayClick = () => {
     window.open(
-      "https://drive.google.com/file/d/1YwKNpra0SLTsO1IzMlLoxWypIZxp6-AI/view?usp=sharing"
+      "https://drive.google.com/file/d/1P4eCS7B3hnD_6H40FJ7GiPzt5dkuTmuV/view?usp=sharing"
     );
   };
 
