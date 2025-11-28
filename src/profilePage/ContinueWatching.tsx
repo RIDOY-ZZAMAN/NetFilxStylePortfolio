@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./ContinueWatching.css";
 
-type ProfileType = "recruiter" | "developer" | "stalker" | "adventure";
+type ProfileType = "recruiter" | "developer" | "stalker" | "adventurer";
 
 interface ContinueWatchingProps {
   profile: ProfileType;
@@ -80,7 +80,7 @@ const continueWatchingConfig = {
       link: "/contact-me",
     },
   ],
-  adventure: [
+  adventurer: [
     {
       title: "Music",
       imgSrc:

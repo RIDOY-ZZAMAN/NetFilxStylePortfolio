@@ -15,7 +15,7 @@ import {
 
 import useMediaQuery from "../mediaQuery/useMediaQuery";
 
-type ProfileType = "recruiter" | "developer" | "stalker" | "adventure";
+type ProfileType = "recruiter" | "developer" | "stalker" | "adventurer";
 
 interface TopPicksRowProps {
   profile: ProfileType;
@@ -144,7 +144,7 @@ const topPicksConfig = {
       icon: <FaCertificate />,
     },
   ],
-  adventure: [
+  adventurer: [
     {
       title: "Music",
       imgSrc:

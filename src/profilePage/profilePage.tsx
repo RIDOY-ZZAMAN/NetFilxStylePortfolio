@@ -5,7 +5,7 @@ import "./ProfilePage.css";
 import ProfileBanner from "./ProfileBanner";
 import TopPicksRow from "./TopPicksRow";
 import ContinueWatching from "./ContinueWatching";
-type ProfileType = "recruiter" | "developer" | "stalker" | "adventure";
+type ProfileType = "recruiter" | "developer" | "stalker" | "adventurer";
 
 const ProfilePage: React.FC = () => {
   const location = useLocation();
@@ -14,7 +14,7 @@ const ProfilePage: React.FC = () => {
     "https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif"; // Default GIF
   const { profileName } = useParams<{ profileName: string }>();
 
-  const profile = ["recruiter", "developer", "stalker", "adventure"].includes(
+  const profile = ["recruiter", "developer", "stalker", "adventurer"].includes(
     profileName!
   )
     ? (profileName as ProfileType)

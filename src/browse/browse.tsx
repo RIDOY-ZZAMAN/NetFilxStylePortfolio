@@ -48,6 +48,7 @@ const Browse: React.FC = () => {
         backgroundGif: profile.backgroundGif,
       },
     });
+    console.log(profile.name);
   };
 
   return (
