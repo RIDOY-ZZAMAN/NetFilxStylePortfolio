@@ -105,7 +105,6 @@ const Projects: React.FC = () => {
 
   return (
     <div className="projects-container">
-      <GoBackButton></GoBackButton> <br />
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div
@@ -179,6 +178,11 @@ const Projects: React.FC = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div
+        style={{ display: "flex", justifyContent: "center", margin: "24px 0" }}
+      >
+        <GoBackButton />
       </div>
     </div>
   );

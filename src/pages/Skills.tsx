@@ -35,7 +35,6 @@ const Skills: React.FC = () => {
 
   return (
     <div className="skills-container">
-      <GoBackButton></GoBackButton>
       {Object.keys(skillsByCategory).map((category, index) => (
         <div key={index} className="skill-category">
           <h3 className="category-title">{category}</h3>
@@ -60,6 +59,11 @@ const Skills: React.FC = () => {
           </div>
         </div>
       ))}
+      <div
+        style={{ display: "flex", justifyContent: "center", margin: "24px 0" }}
+      >
+        <GoBackButton />
+      </div>
     </div>
   );
 };

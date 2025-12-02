@@ -18,7 +18,6 @@ const WorkExperience: React.FC = () => {
   useEffect(() => {
     async function fetchData() {
       const data = await getTimeline();
-      console.log("Loging from WorkEx tsx", data);
 
       setTimeLineData(data);
     }
@@ -26,12 +25,10 @@ const WorkExperience: React.FC = () => {
   }, []);
 
   if (!timeLineData) return <div>Loading...</div>;
-  console.log("🚀 ~ timeLineData:", timeLineData);
 
   return (
     <>
       <div className="timeline-container">
-        <GoBackButton />
         <h2 className="timeline-title">
           📅 Work Experience & Education Timeline
         </h2>
@@ -93,6 +90,11 @@ const WorkExperience: React.FC = () => {
           icon={<StarIcon />}
         />
       </VerticalTimeline>
+      <div
+        style={{ display: "flex", justifyContent: "center", margin: "24px 0" }}
+      >
+        <GoBackButton />
+      </div>
     </>
   );
 };

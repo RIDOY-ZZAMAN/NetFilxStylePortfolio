@@ -26,7 +26,6 @@ const ContactMe: React.FC = () => {
     <>
       {userData.map((user, index) => (
         <div className="contact-container" key={index}>
-          <GoBackButton></GoBackButton>
           <div className="linkedin-badge-custom">
             <img
               src={profilePic}
@@ -68,6 +67,15 @@ const ContactMe: React.FC = () => {
               <p>Or catch up over a coffee ☕</p>
               <FaCoffee className="coffee-icon" />
             </div>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              margin: "24px 0",
+            }}
+          >
+            <GoBackButton />
           </div>
         </div>
       ))}

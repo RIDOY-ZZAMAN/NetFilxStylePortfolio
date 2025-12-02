@@ -37,7 +37,8 @@ const ContinueWatching: React.FC<ContinueWatchingProps> = ({ profile }) => {
       },
       {
         title: "Go Back",
-        imgSrc: "https://cdn-icons-png.flaticon.com/512/3683/3683627.png",
+        imgSrc:
+          "https://cdn-icons-png.freepik.com/256/2459/2459514.png?semt=ais_white_label",
         action: () => navigate(-1), // ✅ works now
       },
     ],
@@ -73,7 +74,8 @@ const ContinueWatching: React.FC<ContinueWatchingProps> = ({ profile }) => {
       },
       {
         title: "Go Back",
-        imgSrc: "https://cdn-icons-png.flaticon.com/512/3683/3683627.png",
+        imgSrc:
+          "https://cdn-icons-png.freepik.com/256/2459/2459514.png?semt=ais_white_label",
         action: () => navigate(-1), // ✅ works now
       },
     ],
@@ -96,7 +98,8 @@ const ContinueWatching: React.FC<ContinueWatchingProps> = ({ profile }) => {
       },
       {
         title: "Go Back",
-        imgSrc: "https://cdn-icons-png.flaticon.com/512/3683/3683627.png",
+        imgSrc:
+          "https://cdn-icons-png.freepik.com/256/2459/2459514.png?semt=ais_white_label",
         action: () => navigate(-1), // ✅ works now
       },
     ],
@@ -124,7 +127,8 @@ const ContinueWatching: React.FC<ContinueWatchingProps> = ({ profile }) => {
       },
       {
         title: "Go Back",
-        imgSrc: "https://cdn-icons-png.flaticon.com/512/3683/3683627.png",
+        imgSrc:
+          "https://cdn-icons-png.freepik.com/256/2459/2459514.png?semt=ais_white_label",
         action: () => navigate(-1), // ✅ works now
       },
     ],

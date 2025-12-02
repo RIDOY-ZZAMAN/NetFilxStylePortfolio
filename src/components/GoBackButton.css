@@ -1,109 +1,28 @@
 .go-back-btn {
-  position: fixed;
-  top: clamp(16px, 4vw, 90px);
-  left: clamp(16px, 4vw, 90px);
   display: flex;
   align-items: center;
-  gap: 8px;
-  background: linear-gradient(
-    135deg,
-    #1a1a1a,
-    #111111
-  ); /* dark gray/black gradient */
-  color: #ffffff;
-  border: 1px solid #2a2a2a;
-  border-radius: 9999px;
-  padding: 10px 18px;
-  font-size: 15px;
-  font-weight: bolder;
+  background-color: white;
+  border: 1px solid gray;
+  padding: 8px 14px;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
-  transition: all 0.25s ease;
-  z-index: 1000;
+  border-radius: 6px;
+  transition: 0.2s ease-in-out;
 }
 
 .go-back-btn:hover {
-  background: linear-gradient(135deg, #1e40af, #1d4ed8);
-  transform: translateY(-2px);
+  opacity: 0.8;
 }
 
-/* 💻 Desktops / Laptops */
-@media (min-width: 1025px) {
-  .go-back-btn {
-    position: fixed;
-    top: clamp(56px, 8vw, 190px);
-    left: clamp(16px, 4vw, 90px);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: linear-gradient(
-      135deg,
-      #1a1a1a,
-      #111111
-    ); /* dark gray/black gradient */
-    color: #ffffff;
-    border: 1px solid #2a2a2a;
-    border-radius: 9999px;
-    padding: 10px 18px;
-    font-size: 15px;
-    font-weight: bolder;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
-    transition: all 0.25s ease;
-    z-index: 1000;
-  }
+.icon-container {
+  display: flex;
+  align-items: center;
 }
 
-/* 📱 Tablets */
-@media (min-width: 600px) and (max-width: 1024px) {
-  .go-back-btn {
-    position: fixed;
-    top: clamp(56px, 8vw, 190px);
-    left: clamp(16px, 4vw, 90px);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: linear-gradient(
-      135deg,
-      #1a1a1a,
-      #111111
-    ); /* dark gray/black gradient */
-    color: #ffffff;
-    border: 1px solid #2a2a2a;
-    border-radius: 9999px;
-    padding: 10px 18px;
-    font-size: 15px;
-    font-weight: bolder;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
-    transition: all 0.25s ease;
-    z-index: 1000;
-  }
+.spacer {
+  width: 6px;
 }
 
-/* 📞 Mobile Phones */
-@media (max-width: 599px) {
-  .go-back-btn {
-    position: fixed;
-    top: clamp(56px, 8vw, 190px);
-    left: clamp(16px, 4vw, 90px);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: linear-gradient(
-      135deg,
-      #1a1a1a,
-      #111111
-    ); /* dark gray/black gradient */
-    color: #ffffff;
-    border: 1px solid #2a2a2a;
-    border-radius: 9999px;
-    padding: 10px 18px;
-    font-size: 15px;
-    font-weight: bolder;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
-    transition: all 0.25s ease;
-    z-index: 1000;
-  }
+.label {
+  font-weight: 600;
+  color: black;
 }

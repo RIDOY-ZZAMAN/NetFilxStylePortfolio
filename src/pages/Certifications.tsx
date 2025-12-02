@@ -110,7 +110,6 @@ const Certifications: React.FC = () => {
 
   return (
     <div className="certifications-container">
-      <GoBackButton></GoBackButton>
       <div className="certifications-grid">
         {certifications.map((cert, index) => (
           <a
@@ -143,6 +142,11 @@ const Certifications: React.FC = () => {
             </div>
           </a>
         ))}
+      </div>
+      <div
+        style={{ display: "flex", justifyContent: "center", margin: "24px 0" }}
+      >
+        <GoBackButton />
       </div>
     </div>
   );

@@ -38,7 +38,6 @@ const ProfileBanner: React.FC = () => {
 
   return (
     <div className="profile-banner">
-      <GoBackButton></GoBackButton>
       <div className="banner-content">
         <h1 className="banner-headline" id="headline">
           AKTARUZZAMAN RIDOY
@@ -53,6 +52,7 @@ const ProfileBanner: React.FC = () => {
               window.open("https://github.com/RIDOY-ZZAMAN", "_blank")
             }
           />
+          <GoBackButton></GoBackButton>
         </div>
       </div>
     </div>

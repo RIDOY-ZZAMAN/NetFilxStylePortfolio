@@ -17,28 +17,34 @@ const Recommendations: React.FC = () => {
   if (recommdentationsData.length == 0) return <div>Loading ...</div>;
 
   return (
-    <div className="timeline-container">
-      <GoBackButton></GoBackButton>
-      <div className="recommendation-card">
-        {recommdentationsData.map((recommendation, index) => (
-          <div className="recommendation-header" key={index}>
-            <img
-              src={recommendation.image}
-              alt="Nagendra Rijal Upadhyaya"
-              className="profile-pic"
-            />
-            <div>
-              <h3>{recommendation.name}</h3>
-              <p>{recommendation.organization}</p>
-              <p className="date">{recommendation.date}</p>
-              <p className="recommendationdetails">
-                {recommendation.recommendationdetails}
-              </p>
+    <>
+      <div className="timeline-container">
+        <div className="recommendation-card">
+          {recommdentationsData.map((recommendation, index) => (
+            <div className="recommendation-header" key={index}>
+              <img
+                src={recommendation.image}
+                alt="Nagendra Rijal Upadhyaya"
+                className="profile-pic"
+              />
+              <div>
+                <h3>{recommendation.name}</h3>
+                <p>{recommendation.organization}</p>
+                <p className="date">{recommendation.date}</p>
+                <p className="recommendationdetails">
+                  {recommendation.recommendationdetails}
+                </p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+      <div
+        style={{ display: "flex", justifyContent: "center", margin: "24px 0" }}
+      >
+        <GoBackButton />
+      </div>
+    </>
   );
 };
 

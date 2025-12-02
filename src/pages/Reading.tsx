@@ -22,7 +22,6 @@ const Reading: React.FC = () => {
 
   return (
     <div className="reading-container">
-      <GoBackButton></GoBackButton>
       <h2 className="reading-title">📚 Books That Shaped My Journey</h2>
       <p className="reading-intro">
         These books have influenced my self-growth.
@@ -43,6 +42,11 @@ const Reading: React.FC = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div
+        style={{ display: "flex", justifyContent: "center", margin: "24px 0" }}
+      >
+        <GoBackButton />
       </div>
     </div>
   );

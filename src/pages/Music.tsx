@@ -41,7 +41,6 @@ const Music: React.FC = () => {
 
   return (
     <div className="music-page">
-      <GoBackButton></GoBackButton>
       <div className="genre-section">
         <h3>Genre</h3>
         <div className="genres">
@@ -91,6 +90,11 @@ const Music: React.FC = () => {
             );
           })}
         </div>
+      </div>
+      <div
+        style={{ display: "flex", justifyContent: "center", margin: "24px 0" }}
+      >
+        <GoBackButton />
       </div>
     </div>
   );
